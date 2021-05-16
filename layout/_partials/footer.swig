@@ -44,7 +44,6 @@
 
 {%- if theme.footer.powered %}
   <div class="powered-by">
-    {%- set next_site = 'https://theme-next.org' %}
     {%- if theme.scheme !== 'Gemini' %}
       {%- set next_site = 'https://' + theme.scheme | lower + '.theme-next.org' %}
     {%- endif %}
@@ -59,6 +58,8 @@
 {%- endif %}
 
 {{- next_inject('footer') }}
-<span id="busuanzi_container_site_uv">
-  本站访问次数：<span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-</span>
+  <div>
+    <span id="busuanzi_container_site_uv">
+      本站访问次数：<span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  </div>
